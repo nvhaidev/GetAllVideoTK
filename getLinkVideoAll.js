@@ -12,12 +12,12 @@ javascript: (function () {
             for (let i = 0; i < myNodelist.length; i++) {
                 link.push(document.querySelectorAll("a.video-feed-item-wrapper")[i][Object.keys(document.querySelectorAll('a.video-feed-item-wrapper')[i])[1]].children.props.videoData.video.playAddr)
             }
-            const file = new Blob([link], {type: type});
+            const file = new Blob(JSON.stringify(link), {type: 'text/plain'});
             const url = window.URL.createObjectURL(file);
             const b = document.createElement("a");
             b.style.display = "none";
             b.href = url;
-            
+
             b.setAttribute("download", `${uid}-Namdeptrai.txt`);
             b.download = `${uid}-Namdeptrai.txt`;
             document.body.appendChild(b);
