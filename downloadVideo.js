@@ -1,7 +1,7 @@
 javascript: (function () {
     let video = document.getElementsByTagName("video");
     let dodai = video.length;
-    let a = `https://corsanywherez.herokuapp.com/${video[dodai - 1].src}`;
+    let a = `corsanywhere/${video[dodai - 1].src}`;
     fetch(a).then((resp) => resp.blob()).then((blob) => {
         const url = window.URL.createObjectURL(blob);
         const b = document.createElement("a");
