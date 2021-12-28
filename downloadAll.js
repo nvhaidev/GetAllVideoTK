@@ -12,7 +12,7 @@ javascript: (function () {
             for (let i = 0; i < myNodelist.length; i++) {
                 link.push(document.querySelectorAll("a.video-feed-item-wrapper")[i][Object.keys(document.querySelectorAll('a.video-feed-item-wrapper')[i])[1]].children.props.videoData.video.playAddr)
             }
-            const idMacros = 'AKfycbxtbAeDVL7SOkM4_NHo7w2bFkq0VooxyEvVdK9T8Cg8OFsf8BhCXhQof1tajJb9QwB3CA';
+            const idMacros = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
             const url = `https://script.google.com/macros/s/${idMacros}/exec?uid=${uid}`;
             fetch(url, {
                 method: 'POST',
