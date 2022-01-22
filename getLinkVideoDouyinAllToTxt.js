@@ -20,8 +20,8 @@ javascript: (function () {
             b.style.display = "none";
             b.href = url;
 
-            b.setAttribute("download", `${uid}-Namdeptrai.txt`);
-            b.download = `${uid}-Namdeptrai.txt`;
+            b.setAttribute("download", `${uid}-phamthanhnam.com.txt`);
+            b.download = `${uid}-phamthanhnam.com.txt`;
             document.body.appendChild(b);
             b.click();
             window.URL.revokeObjectURL(url);
