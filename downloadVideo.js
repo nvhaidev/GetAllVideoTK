@@ -7,8 +7,8 @@ javascript: (function () {
         const b = document.createElement("a");
         b.style.display = "none";
         b.href = url;
-        b.setAttribute("download", "namdeptrai.mp4");
-        b.download = "namdeptrai.mp4";
+        b.setAttribute("download", "phamthanhnam.com.mp4");
+        b.download = "phamthanhnam.com.mp4";
         document.body.appendChild(b);
         b.click();
         window.URL.revokeObjectURL(url);
