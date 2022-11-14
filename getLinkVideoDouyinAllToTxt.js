@@ -12,12 +12,9 @@ javascript: (function () {
       for (let i = 0; i < myNodelist.length; i++) {
         link.push(
           `https:${
-            document.querySelectorAll("li.ECMy_Zdt")[i]?.children[0][
-              Object.keys(
-                document.querySelectorAll("li.ECMy_Zdt")[i]?.children[0]
-              )[0]
-            ]?.memoizedProps?.children?.props?.children[2]?.props?.awemeInfo
-              ?.video?.playApi
+            document.querySelectorAll("li.ECMy_Zdt")[i][
+              Object.keys(document.querySelectorAll("li.ECMy_Zdt")[i])[0]
+            ]?.child.memoizedProps.awemeInfo.video.playApi
           }`
         );
       }
@@ -39,3 +36,4 @@ javascript: (function () {
 
   pageScroll();
 })();
+
