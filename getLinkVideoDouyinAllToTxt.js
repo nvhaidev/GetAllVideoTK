@@ -1,22 +1,23 @@
-javascript: (function () {
+
+(() => {
   var video = 0;
 
   function pageScroll() {
     window.scrollBy(0, 1000);
-    let max = document.querySelectorAll("li.ECMy_Zdt").length;
+    let max = document.querySelectorAll("li.Eie04v01").length;
     video += 2;
     if (video > max) {
-      const myNodelist = document.querySelectorAll("li.ECMy_Zdt");
+      const myNodelist = document.querySelectorAll("li.Eie04v01");
       const uid = window.location.href.split("/")[4].split("?")[0];
       const link = [];
       for (let i = 0; i < myNodelist.length; i++) {
         link.push(
           `https:${
-            document.querySelectorAll("li.ECMy_Zdt")[i]?.children[0][
+            document.querySelectorAll("li.Eie04v01")[i]?.children[0][
               Object.keys(
-                document.querySelectorAll("li.ECMy_Zdt")[i]?.children[0]
+                document.querySelectorAll("li.Eie04v01")[i]?.children[0]
               )[0]
-            ]?.memoizedProps?.children?.props?.children[2]?.props?.awemeInfo
+            ]?.memoizedProps?.children[0]?.props?.children[2]?.props?.awemeInfo
               ?.video?.playApi
           }`
         );
